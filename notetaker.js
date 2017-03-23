@@ -103,20 +103,20 @@
    */
   function _createNote(noteText) {
     const note = $('<li>')
-      .addClass('notebook__note')
-      .css('backgroundColor', currentColor);
+    .addClass('notebook__note')
+    .css('backgroundColor', currentColor);
     const textElem = $('<pre>').text(noteText);
     const edit = $('<button>').html('Edit')
-      .addClass('notebook__edit-action');
+    .addClass('notebook__edit-action');
     const del = $('<button>').html('X')
-      .addClass('notebook__delete-action');
+    .addClass('notebook__delete-action');
 
     edit.click(editNote);
     del.click(deleteNote);
 
     return note.append(del)
-      .append(edit)
-      .append(textElem);
+    .append(edit)
+    .append(textElem);
   }
 
   /**
