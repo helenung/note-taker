@@ -1,0 +1,102 @@
+#notebook__color-picker div {
+	display: inline-block;
+	height: 30px;
+	width: 40px;
+}
+
+#notebook__color-picker div:first-of-type {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+#notebook__color-picker div:last-of-type {
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#notebook__text-area,
+.notebook__note,
+.notebook__note pre,
+.notebook__starting-text {
+	/* define font in one place */
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 12px;
+}
+
+#notebook__text-area {
+    background-color: rgba(0,0,0,.1);
+	border: none;
+    border-radius: 4px;
+    color: rgba(0,0,0,.6);
+    height: 60vh;
+    padding: 12px;
+    width: inherit;
+}
+
+#notebook__list {
+	list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 0;
+    width: 90%;
+}
+
+.notebook__container {
+	float: left;
+	width: 50%;
+}
+
+.notebook__delete-action,
+.notebook__edit-action {
+    color: rgba(0,0,0,.5);
+    border: none;
+    background-color: transparent;
+	float: right;
+    font-size: 12px;
+    margin: 0 0 4px 0;
+    padding: 0 6px;
+}
+
+.notebook__delete-action {
+	border-left: 1px solid rgba(0,0,0,.5);
+}
+
+.notebook__note {
+	border-radius: 4px;
+	list-style-type: none;
+    margin: 8px;
+	overflow: hidden;
+	padding: 12px;
+}
+
+.notebook__note pre {
+    color: rgba(0,0,0,.7);
+    margin: 0;
+	white-space: pre-wrap;
+}
+
+.notebook__page {
+	margin: 24px;
+	width: 90%;
+}
+
+.notebook__save-action {
+    background-color: white;
+    border: none;
+    border-bottom: rgba(0,0,0,.7) 2px solid;
+    border-radius: 2px;
+    color: rgba(0,0,0,.7);
+    font-family: Futura, Arial, sans-serif;
+    padding: 8px;
+}
+
+.notebook__starting-text {
+	color: rgba(0,0,0,.5);
+	font-style: italic;
+}
+
+.notebook__work-area {
+	position: fixed;
+    right: 0px;
+	text-align: center;
+}

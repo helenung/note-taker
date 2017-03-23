@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NoteTaker</title>
+		<link href="notetaker.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="notetaker.js"></script>
+	</head>
+
+	<body>
+		<div class="notebook__container">
+			<div id="notebook__notes" class="notebook__page">
+				<span class="notebook__starting-text">New notes will appear here.</span>
+				<!-- Notes are dynamically generated, they will look like this:
+				<ul id="notebook__list">
+					<li class="notebook__note">
+						...
+					</li>
+				</ul>
+				-->
+			</div>
+		</div>
+
+		<div class="notebook__container notebook__work-area">
+			<div class="notebook__page">
+				<textarea id="notebook__text-area" placeholder="Start typing your notes here..."></textarea>
+				<div id="notebook__color-picker"></div>
+				<button id="save" class="notebook__save-action">Save</button>
+			</div>
+		</div>
+	</body>
+</html>
